@@ -1,7 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- You can use a font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 2rem 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        #about,
+        #projects,
+        #contact {
+            background: #fff;
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .project {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .project-info {
+            flex: 1;
+            margin-left: 1rem;
+        }
+
+        .project-info h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-info p {
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p>Web Developer | Designer | Creator</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Your Name, a passionate web developer with experience in creating dynamic and responsive websites. I specialize in front-end development with a focus on creating engaging user experiences.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+
+            <div class="project">
+                <img src="images/project1.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project Title 1</h3>
+                    <p>Brief description of the project. What technologies were used? What was the goal?</p>
+                    <a href="https://github.com/username/project1" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/project2.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project Title 2</h3>
+                    <p>Brief description of the project. What technologies were used? What was the goal?</p>
+                    <a href="https://github.com/username/project2" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to email me at <a href="mailto:your.email@example.com">your.email@example.com</a> or connect with me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
