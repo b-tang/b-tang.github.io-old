@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name | Portfolio</title>
-    <link rel="stylesheet" href="css/main.css">
-    <!-- You can use a font from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
     <style>
         /* Basic Reset */
         * {
@@ -17,107 +15,152 @@
         }
 
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Poppins', sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #222;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00c3ff;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff5f7e;
         }
 
         header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
+            height: 100vh;
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
 
         header h1 {
+            font-size: 3rem;
             margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
+            margin-top: 2rem;
         }
 
         nav ul li {
-            margin: 0 15px;
+            margin: 0 20px;
         }
 
         nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 50px;
         }
 
         section {
-            padding: 2rem 0;
-        }
-
-        .container {
-            width: 80%;
+            padding: 3rem 0;
+            width: 85%;
             margin: auto;
-            overflow: hidden;
-        }
-
-        #about,
-        #projects,
-        #contact {
-            background: #fff;
-            margin-top: 1rem;
-            padding: 1rem;
-            border-radius: 5px;
         }
 
         h2 {
             text-align: center;
-            margin-bottom: 1rem;
-            color: #333;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            color: #ff5f7e;
         }
 
-        .project {
+        #about p {
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        #projects {
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
 
-        .project img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
+        .project-card {
+            background-color: #333;
+            margin: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            width: 300px;
         }
 
-        .project-info {
-            flex: 1;
-            margin-left: 1rem;
+        .project-card:hover {
+            transform: translateY(-10px);
         }
 
-        .project-info h3 {
-            margin-bottom: 0.5rem;
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
         }
 
-        .project-info p {
-            margin-bottom: 1rem;
+        .project-card h3 {
+            padding: 1rem;
+            font-size: 1.5rem;
+            background-color: #ff5f7e;
+            text-align: center;
+        }
+
+        .project-card p {
+            padding: 1rem;
+            font-size: 1rem;
+        }
+
+        #contact {
+            text-align: center;
+        }
+
+        #contact p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        #contact a {
+            padding: 10px 30px;
+            border: 2px solid #00c3ff;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 600;
         }
 
         footer {
-            background: #333;
-            color: #fff;
             text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
+            padding: 2rem 0;
+            background-color: #111;
+            color: #aaa;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div>
             <h1>Your Name</h1>
-            <p>Web Developer | Designer | Creator</p>
+            <p>Creative Developer & Designer</p>
             <nav>
                 <ul>
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -126,47 +169,38 @@
     </header>
 
     <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm Your Name, a passionate web developer with experience in creating dynamic and responsive websites. I specialize in front-end development with a focus on creating engaging user experiences.</p>
-        </div>
+        <h2>About Me</h2>
+        <p>
+            I'm a passionate web developer and designer with a knack for crafting beautiful and functional digital experiences. My journey in tech started with curiosity and has evolved into a full-fledged career.
+        </p>
     </section>
 
     <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
+        <h2>My Projects</h2>
 
-            <div class="project">
-                <img src="images/project1.jpg" alt="Project 1">
-                <div class="project-info">
-                    <h3>Project Title 1</h3>
-                    <p>Brief description of the project. What technologies were used? What was the goal?</p>
-                    <a href="https://github.com/username/project1" target="_blank">View Project</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="images/project2.jpg" alt="Project 2">
-                <div class="project-info">
-                    <h3>Project Title 2</h3>
-                    <p>Brief description of the project. What technologies were used? What was the goal?</p>
-                    <a href="https://github.com/username/project2" target="_blank">View Project</a>
-                </div>
-            </div>
-
-            <!-- Add more projects as needed -->
+        <div class="project-card">
+            <img src="images/project1.jpg" alt="Project 1">
+            <h3>Project Title 1</h3>
+            <p>This project involves...</p>
         </div>
+
+        <div class="project-card">
+            <img src="images/project2.jpg" alt="Project 2">
+            <h3>Project Title 2</h3>
+            <p>This project involves...</p>
+        </div>
+
+        <!-- Add more project cards as needed -->
     </section>
 
     <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, feel free to email me at <a href="mailto:your.email@example.com">your.email@example.com</a> or connect with me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
-        </div>
+        <h2>Contact Me</h2>
+        <p>If you’d like to collaborate or just want to say hello, feel free to reach out!</p>
+        <a href="mailto:your.email@example.com">Email Me</a>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Your Name. Crafted with love.</p>
     </footer>
 </body>
 
