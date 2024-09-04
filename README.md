@@ -28,7 +28,7 @@ This website is a personal portfolio and blog designed to highlight my skills, p
 
 - **HTML/CSS/JavaScript:** Core structure and styling.
 <!-- - **[Framework/Library Name]:** Used for building [specific feature, e.g., the frontend, backend]. -->
-- **[GitHub Pages]:** Hosting the website.
+- **GitHub Pages:** Hosting the website.
 <!-- - **[Other Technologies]:** Any additional tools or technologies used. -->
 
 ## Installation
