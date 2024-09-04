@@ -27,9 +27,9 @@ This website is a personal portfolio and blog designed to highlight my skills, p
 ## Technologies Used
 
 - **HTML/CSS/JavaScript:** Core structure and styling.
-- **[Framework/Library Name]:** Used for building [specific feature, e.g., the frontend, backend].
-- **[Hosting Service, e.g., GitHub Pages]:** Hosting the website.
-- **[Other Technologies]:** Any additional tools or technologies used.
+<!-- - **[Framework/Library Name]:** Used for building [specific feature, e.g., the frontend, backend]. -->
+- **[GitHub Pages]:** Hosting the website.
+<!-- - **[Other Technologies]:** Any additional tools or technologies used. -->
 
 ## Installation
 
@@ -50,7 +50,7 @@ If you'd like to run this website locally, follow these steps:
 
 ## Usage
 
-To view the website, simply visit the following link: [Your Website URL](https://b-tang.github.io/)
+To view the website, simply visit the following link: [b-tang.github.io](https://b-tang.github.io/)
 
 ## Contributing
 
@@ -65,7 +65,7 @@ This project is licensed under the [MIT License](LICENSE).
 If you have any questions or just want to say hi, you can reach me at:
 
 - **Email:** briantang31@gmail.com
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/briantang01/)
+- **LinkedIn:** [briantang01](https://www.linkedin.com/in/briantang01/)
 <!-- - **Twitter:** [@YourTwitterHandle](https://twitter.com/briantangg) -->
 
 Thank you for visiting my website!
