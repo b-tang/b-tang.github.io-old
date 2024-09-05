@@ -166,6 +166,83 @@
             font-weight: 600;
         }
 
+        .contact-form {
+            background-color: #ffffff;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        .contact-form .input-group {
+            margin-bottom: 20px;
+            
+        }
+
+        .contact-form .input-group label {
+            display: block;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .contact-form .input-group input,
+        .contact-form .input-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;  
+        }
+
+        .contact-form .input-group input:focus,
+        .contact-form .input-group textarea:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        .contact-form .input-group textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-form .success-message {
+            display: none;
+            color: #28a745;
+            margin-top: 20px;
+        }
+
+        .contact-form .error-message {
+            display: none;
+            color: #dc3545;
+            margin-top: 20px;
+        }
+
         footer {
             text-align: center;
             padding: 2rem 0;
@@ -249,6 +326,45 @@
         <p>If you’d like to collaborate or just want to say hello, feel free to reach out!</p>
         <a style="mix-blend-mode: normal;" href="mailto:briantang31@gmail.com">Email Me</a>
     </section><!-- End Contact Section -->
+
+    <div class="contact-form" action="php/send_email.php" method="POST">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+            <div class="success-message">Thank you! Your message has been sent.</div>
+            <div class="error-message">Oops! Something went wrong. Please try again.</div>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+    
+            // You can add AJAX here for form submission to a server
+    
+            const successMessage = document.querySelector('.success-message');
+            const errorMessage = document.querySelector('.error-message');
+    
+            successMessage.style.display = 'block';
+            errorMessage.style.display = 'none';
+        });
+    </script>
 
     <!-- ======= Footer ======= -->
     <footer>
