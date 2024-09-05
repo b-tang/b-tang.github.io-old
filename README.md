@@ -65,7 +65,7 @@ This project is licensed under the [MIT License](LICENSE).
 If you have any questions or just want to say hi, you can reach me at:
 
 - **Email:** briantang31@gmail.com
-- **LinkedIn:** **[LinkedIn](https://www.linkedin.com/in/briantang01/)**
+- **[LinkedIn](https://www.linkedin.com/in/briantang01/)**
 <!-- - **Twitter:** [@YourTwitterHandle](https://twitter.com/briantangg) -->
 
 Thank you for visiting my website!
