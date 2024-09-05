@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian Tang | Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,700&display=swap">
     <style>
         /* Basic Reset */
         * {
@@ -25,16 +28,18 @@
         a {
             text-decoration: none;
             color: #00c3ff;
-            transition: color 0.3s ease;
+            transition: color 1s ease;    
+            mix-blend-mode: overlay;
         }
 
         a:hover {
             color: #ff5f7e;
+            mix-blend-mode: normal;
         }
 
         header {
             height: 100vh;
-            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            background: url('') no-repeat center center/cover;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -42,8 +47,8 @@
 
             height:100vh;
             margin: 0;
-            --x: calc(var(--posX, 0) * 1px);
-            --y: calc(var(--posY, 0) * 1px);
+            --x: calc(var(--posX, 100) * 2px);
+            --y: calc(var(--posY, 100) * 1px);
             background-image: 
             linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
             radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(022 000 045)), 
@@ -168,16 +173,19 @@
             color: #aaa;
         }
     </style>
+
 </head>
 
 <body>
+
+    <!-- ======= Header ======= -->
     <header>
         <div>
             <h1>Brian Tang</h1>
             <p>Creative Developer & Engineer</p>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about" >About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="https://github.com/b-tang">GitHub</a></li>
@@ -185,9 +193,10 @@
                 </ul>
             </nav>
         </div>
-        <script src="js/bg-pointer.js"></script>
-    </header>
+        
+    </header><!-- End Header -->
 
+    <!-- ======= About Section ======= -->
     <section id="about">
         <h2>About Me</h2>
         <p>
@@ -195,8 +204,9 @@
             Recognized for possessing a strong passion for continuing education initiatives and working with future technology leaders to drive personal and professional development. 
             Adaptable Computer Science major eager to join an innovative organization in the capacity of a software engineer/developer or information technology.
         </p>
-    </section>
+    </section><!-- End About Section -->
 
+    <!-- ======= Projects Section ======= -->
     <section id="projects">
         <h2>My Projects</h2>
 
@@ -217,9 +227,9 @@
                     Links:
                 </p>
                 <p style="padding: 0rem;">
-                    <li style="text-indent: 10%;"><a href="https://github.com/tomnguyen211/Slender-Man">GitHub Repo</a></li>
-                    <li style="text-indent: 10%;"><a href="https://youtu.be/bDXyYBSS4wQ">Game Trailer</a></li>
-                    <li style="text-indent: 10%;"><a href="https://youtu.be/sMjuigiJU5s">Gameplay</a></li>
+                    <li style="text-indent: 10%;"><a style="mix-blend-mode: normal;" href="https://github.com/tomnguyen211/Slender-Man">GitHub Repo</a></li>
+                    <li style="text-indent: 10%;"><a style="mix-blend-mode: normal;" href="https://youtu.be/bDXyYBSS4wQ">Game Trailer</a></li>
+                    <li style="text-indent: 10%;"><a style="mix-blend-mode: normal;" href="https://youtu.be/sMjuigiJU5s">Gameplay</a></li>
                 </p>
             </p>
         </div>
@@ -231,17 +241,23 @@
         </div>
 
         <!-- Add more project cards as needed -->
-    </section>
+    </section><!-- End Projects Section -->
 
+    <!-- ======= Contact Section ======= -->
     <section id="contact">
         <h2>Contact Me</h2>
         <p>If you’d like to collaborate or just want to say hello, feel free to reach out!</p>
-        <a href="mailto:briantang31@gmail.com">Email Me</a>
-    </section>
+        <a style="mix-blend-mode: normal;" href="mailto:briantang31@gmail.com">Email Me</a>
+    </section><!-- End Contact Section -->
 
+    <!-- ======= Footer ======= -->
     <footer>
-        <p>2024 Made by <a href="https://www.linkedin.com/in/briantang01">Brian Tang</a> with ❤️</p>
-    </footer>
+        <p>&copy; 2024 Made by <a style="mix-blend-mode: normal;" href="https://www.linkedin.com/in/briantang01">Brian Tang</a> with ❤️ <br>All rights reserved.</p>
+    </footer><!-- End Footer -->
+
+    <!-- JS files -->
+    <script src="js/bg-pointer.js"></script>
+
 </body>
 
 </html>
