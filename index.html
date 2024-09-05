@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
+    <title>Brian Tang | Portfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
     <style>
         /* Basic Reset */
@@ -15,7 +15,7 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Open Sans', sans-serif;
             line-height: 1.6;
             background-color: #222;
             color: #fff;
@@ -39,6 +39,19 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+
+            height:100vh;
+            margin: 0;
+            --x: calc(var(--posX, 0) * 1px);
+            --y: calc(var(--posY, 0) * 1px);
+            background-image: 
+            linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
+            radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(022 000 045)), 
+            radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(250 255 000), rgb(036 000 000)), 
+            radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
+            radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)), 
+            linear-gradient(60deg, rgb(255 000 000), rgb(120 086 255));
+            background-blend-mode: overlay, overlay, difference, difference, difference, normal;
         }
 
         header h1 {
@@ -127,6 +140,10 @@
             font-size: 1rem;
         }
 
+        .project-card ul {
+            padding: 20px;
+        }
+
         #contact {
             text-align: center;
         }
@@ -156,22 +173,27 @@
 <body>
     <header>
         <div>
-            <h1>Your Name</h1>
-            <p>Creative Developer & Designer</p>
+            <h1>Brian Tang</h1>
+            <p>Creative Developer & Engineer</p>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/b-tang">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/briantang01">LinkedIn</a></li>
                 </ul>
             </nav>
         </div>
+        <script src="js/bg-pointer.js"></script>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
         <p>
-            I'm a passionate web developer and designer with a knack for crafting beautiful and functional digital experiences. My journey in tech started with curiosity and has evolved into a full-fledged career.
+            Hello! I am a 22 years old Computer Science graduate at Cal State LA College of ECST with coding experience gained throughout my experience and personal projects. 
+            Recognized for possessing a strong passion for continuing education initiatives and working with future technology leaders to drive personal and professional development. 
+            Adaptable Computer Science major eager to join an innovative organization in the capacity of a software engineer/developer or information technology.
         </p>
     </section>
 
@@ -179,15 +201,33 @@
         <h2>My Projects</h2>
 
         <div class="project-card">
-            <img src="images/project1.jpg" alt="Project 1">
-            <h3>Project Title 1</h3>
-            <p>This project involves...</p>
+            <img src="images/project_1.jpg" alt="Under Construction...">
+            <h3>Secure Module/Key Management Application </h3>
+            <p>Under Construction...</p>
         </div>
 
         <div class="project-card">
-            <img src="images/project2.jpg" alt="Project 2">
-            <h3>Project Title 2</h3>
-            <p>This project involves...</p>
+            <img src="images/project_2.png" alt="Project 2">
+            <h3>It Follows</h3>
+            <p>Slender Man inspired story survival horror game created with my two friends.
+                <p>
+                    My role was to design, code and animate the main character body movement functions.
+                </p>
+                <p>
+                    Links:
+                </p>
+                <p style="padding: 0rem;">
+                    <li style="text-indent: 10%;"><a href="https://github.com/tomnguyen211/Slender-Man">GitHub Repo</a></li>
+                    <li style="text-indent: 10%;"><a href="https://youtu.be/bDXyYBSS4wQ">Game Trailer</a></li>
+                    <li style="text-indent: 10%;"><a href="https://youtu.be/sMjuigiJU5s">Gameplay</a></li>
+                </p>
+            </p>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project_3.jpg" alt="Under Construction...">
+            <h3>Airplane Management</h3>
+            <p>Under Construction...</p>
         </div>
 
         <!-- Add more project cards as needed -->
@@ -196,11 +236,11 @@
     <section id="contact">
         <h2>Contact Me</h2>
         <p>If you’d like to collaborate or just want to say hello, feel free to reach out!</p>
-        <a href="mailto:your.email@example.com">Email Me</a>
+        <a href="mailto:briantang31@gmail.com">Email Me</a>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. Crafted with love.</p>
+        <p>2024 Made by <a href="https://www.linkedin.com/in/briantang01">Brian Tang</a> with ❤️</p>
     </footer>
 </body>
 
