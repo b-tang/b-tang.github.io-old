@@ -15,7 +15,7 @@ body {
     margin: 0;
     
     /* Define the x and y positions for dynamic animation */
-    --x: calc(var(--posX, 100) * 1px);
+    --x: calc(var(--posX, 100) * 3px);
     --y: calc(var(--posY, 100) * 1px);
 
     /* Define the background with gradients */
