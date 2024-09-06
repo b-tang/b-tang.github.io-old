@@ -11,17 +11,27 @@ body {
     background-color: #222;
     color: #fff;
     scroll-behavior: smooth;
-    height:100vh;
+    height: 100vh;
     margin: 0;
-    --x: calc(var(--posX, 100) * 2px);
+    
+    /* Define the x and y positions for dynamic animation */
+    --x: calc(var(--posX, 100) * 1px);
     --y: calc(var(--posY, 100) * 1px);
+
+    /* Define the background with gradients */
     background-image: 
-    linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
-    radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(022 000 045)), 
-    radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(250 255 000), rgb(036 000 000)), 
-    radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
-    radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)), 
-    linear-gradient(60deg, rgb(255 000 000), rgb(120 086 255));
+        linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
+        radial-gradient(90% 100% at calc(50% + var(--x)) calc(0% + var(--y)), rgb(200 200 200), rgb(22 0 45)), 
+        radial-gradient(100% 100% at calc(80% - var(--x)) calc(0% - var(--y)), rgb(250 255 0), rgb(36 0 0)), 
+        radial-gradient(150% 210% at calc(100% + var(--x)) calc(0% + var(--y)), rgb(20 175 125), rgb(0 10 255)), 
+        radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 77 0), rgb(0 200 255)), 
+        linear-gradient(60deg, rgb(255 0 0), rgb(120 86 255));
+    
+    /* Make the background cover the entire body */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-blend-mode: overlay, overlay, difference, difference, difference, normal;
 }
 
@@ -44,20 +54,6 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    height:100vh;
-    margin: 0;
-    --x: calc(var(--posX, 100) * 2px);
-    --y: calc(var(--posY, 100) * 1px);
-    background-image: 
-    linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
-    radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(022 000 045)), 
-    radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(250 255 000), rgb(036 000 000)), 
-    radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
-    radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)), 
-    linear-gradient(60deg, rgb(255 000 000), rgb(120 086 255));
-    background-blend-mode: overlay, overlay, difference, difference, difference, normal;
-    overflow-wrap:anywhere;
 }
 
 header h1 {
