@@ -67,7 +67,7 @@ header p {
 
 nav ul {
     list-style: none;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     margin-top: 2rem;
     flex-wrap: wrap;
@@ -75,6 +75,7 @@ nav ul {
 
 nav ul li {
     margin: 0 20px;
+    display: inline-block;
 }
 
 nav ul li a {
@@ -82,6 +83,7 @@ nav ul li a {
     padding: 10px 20px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50px;
+    display: inline-block;
 }
 
 section {
