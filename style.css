@@ -71,7 +71,6 @@ nav ul {
     justify-content: center;
     margin-top: 2rem;
     flex-wrap: wrap;
-    
 }
 
 nav ul li {
@@ -119,7 +118,7 @@ h2 {
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    width: 300px;
+    width: 500px;
 }
 
 .project-card:hover {
