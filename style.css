@@ -127,6 +127,10 @@ h2 {
     transform: translateY(-10px);
 }
 
+.project-card a:hover {
+    text-decoration: underline;
+}
+
 .project-card img {
     width: 100%;
     height: 200px;
