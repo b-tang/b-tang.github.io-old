@@ -68,5 +68,4 @@ If you have any inquiries, you can reach me at:
 - **[LinkedIn](https://www.linkedin.com/in/briantang01/)**
 <!-- - **Twitter:** [@YourTwitterHandle](https://twitter.com/briantangg) -->
 
-Thank you for visiting my website!
-
+<br>Thank you for visiting my website!
