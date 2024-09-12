@@ -62,7 +62,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-If you have any questions or just want to say hi, you can reach me at:
+If you have any inquiries, you can reach me at:
 
 - **Email:** briantang31@gmail.com
 - **[LinkedIn](https://www.linkedin.com/in/briantang01/)**
